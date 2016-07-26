@@ -3,10 +3,6 @@ a {
     text-decoration: underline;
     color: black;
     }
-.active {
-    font-style: italic;
-    text-decoration: none;
-    }
 body {
     padding: 20px;
     margin: 20px;
@@ -49,6 +45,12 @@ img {
 div {
     font-family: Arial;
     }
+.active {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    display:inline-block;
+    }
 .date {
     font-size:12px;
     display:inline-block;
@@ -57,7 +59,7 @@ div {
     font-weight: bold;
     font-style: italic;
     display:inline-block;
-}
+    }
 main {
     margin-left:80px;
     margin-right:80px;

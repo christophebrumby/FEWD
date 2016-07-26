@@ -74,3 +74,6 @@ p {
     font-family: Times New Roman;
     text-align:left;
     }
+ul {
+    list-style: square;
+    }

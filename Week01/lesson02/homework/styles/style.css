@@ -1,0 +1,76 @@
+a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    }
+.active {
+    font-style: italic;
+    text-decoration: none;
+    }
+body {
+    padding: 20px;
+    margin: 20px;
+    font-family: Arial;
+    }
+h1 {
+    text-align: center
+    }
+h2 {
+    font-size: 26px;
+    font-weight: bolder;
+    }
+h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    }
+hr {
+    border-style: solid;
+    width: 95%;
+    height: 5px;
+    background-color: black;
+    }
+.fineline {
+    height:1px;
+    width: auto;
+    margin: 30px 0 30px 0;
+    }
+img {
+    float: right;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    margin: 0 0 30px 20px;
+    }
+.portfolioimg {
+    float:none;
+    text-align:left;
+    }
+div {
+    font-family: Arial;
+    }
+.date {
+    font-size:12px;
+    display:inline-block;
+    }
+.job {
+    font-weight: bold;
+    font-style: italic;
+    display:inline-block;
+}
+main {
+    margin-left:80px;
+    margin-right:80px;
+    margin-bottom:60px;
+    }
+nav {
+    text-align: center;
+    margin-top:40px;
+    }
+p {
+    text-align: center;
+    }
+.description {
+    font-family: Times New Roman;
+    text-align:left;
+    }

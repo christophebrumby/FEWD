@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+body {
+	width: 100%;
+	margin: auto;
+}
+
+header {
+	background-color: #FCE;
+}
+
+main {
+	background-color: #CFE;
+	float: left;
+	width: 65%;
+	margin: 0 0.5% 0 1%;
+}
+
+aside {
+	background-color: #EFC;
+	float: right;
+	width: 32%;
+	margin: 0 1% 0 0.5%;
+}
+
+header, footer {
+	margin: 1%;
+}
+
+main, aside {
+	height: 350px;
+}
+
+footer {
+	background-color: #ECC;
+}
+
+.spaceforall {
+	padding: 10px;
+	border: 1px solid #000;
+}

@@ -34,19 +34,19 @@ aside {
 	margin: 0 1% 0 0.5%;
 }
 
+footer {
+	background-color: #ECC;
+}
+
+header, main, aside, footer  {
+	padding: 10px;
+	border: 1px solid #000;
+}
+
 header, footer {
 	margin: 1%;
 }
 
 main, aside {
 	height: 350px;
-}
-
-footer {
-	background-color: #ECC;
-}
-
-.spaceforall {
-	padding: 10px;
-	border: 1px solid #000;
 }

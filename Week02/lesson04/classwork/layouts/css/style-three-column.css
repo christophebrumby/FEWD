@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+body {
+	width: 100%;
+	margin: auto;
+}
+
+header {
+	background-color: #FCE;
+}
+
+nav {
+	background-color: #9AC1E8;
+	float: left;
+	width: 20%;
+	margin: 0 0.5% 0 1%;
+}
+
+main {
+	background-color: #CFE;
+	float: left;
+	width:56%;
+	margin: 0 0.5% 0 0.5%;
+}
+
+aside {
+	background-color: #EFC;
+	float: right;
+	width: 20%;
+	margin: 0 1% 0 0.5%;
+}
+
+header, footer {
+	margin: 1%;
+}
+
+nav, main, aside {
+	height: 350px;
+}
+
+footer {
+	background-color: #ECC;
+}
+
+.spaceforall {
+	padding: 10px;
+	border: 1px solid #000;
+}

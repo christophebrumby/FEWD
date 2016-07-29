@@ -23,32 +23,24 @@ header {
 main {
 	background-color: #CFE;
 	float: left;
-	width: 48.5%;
 	margin: 0 0.5% 0 1%;
 }
 
 aside {
 	background-color: #EFC;
 	float: right;
-	width: 48.5%;
 	margin: 0 1% 0 0.5%;
 }
 
 .box1 {
-	float: left;
-	width: 32%;
 	margin: 1% 0.5% 0 1%;
 }
 
 .box2 {
-	float: left;
-	width: 32%;
 	margin: 1% 0.5% 0 0.5%;
 }
 
 .box3 {
-	float: left;
-	width: 32%;
 	margin: 1% 1% 0 0.5%;
 }
 
@@ -67,9 +59,12 @@ header, footer {
 
 main, aside {
 	height: 350px;
+	width: 48.5%;
 }
 
 .box1, .box2, .box3 {
 	height: 100px;
 	background-color: #CCD3DA;
+	float: left;
+	width: 32%;
 }

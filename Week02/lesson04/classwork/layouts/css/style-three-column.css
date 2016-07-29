@@ -23,7 +23,6 @@ header {
 nav {
 	background-color: #9AC1E8;
 	float: left;
-	width: 20%;
 	margin: 0 0.5% 0 1%;
 }
 
@@ -37,7 +36,6 @@ main {
 aside {
 	background-color: #EFC;
 	float: right;
-	width: 20%;
 	margin: 0 1% 0 0.5%;
 }
 
@@ -56,4 +54,8 @@ header, footer {
 
 nav, main, aside {
 	height: 350px;
+}
+
+nav, aside {
+	width: 20%;
 }

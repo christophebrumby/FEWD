@@ -63,13 +63,6 @@ header, nav {
 	height: 100px;
 }
 
-.box1, .box2, .box3 {
-	height: 100px;
-	float: left;
-	width: 32%;
-	background-color: #CCD3DA;
-}
-
 .nav1, .nav2, .nav3, .nav4 {
 	height: 50px;
 	width: 24%;
@@ -85,4 +78,11 @@ header, nav {
 
 .nav4 {
 	float: right;
+}
+
+.box1, .box2, .box3 {
+	height: 100px;
+	float: left;
+	width: 32%;
+	background-color: #CCD3DA;
 }

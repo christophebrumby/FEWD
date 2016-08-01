@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+body {
+	width: 100%;
+	margin: auto;
+}
+
+header {
+	background-color: #FCE;
+	float: left;
+	width: 25%;
+}
+
+nav {
+	float: right;
+	width: 66%;
+	margin: 1% 1% 1% 0;
+}
+
+main {
+	background-color: #CFE;
+	margin: 0 1%;
+	height: 350px;
+}
+
+.box1 {
+	margin: 1% 0.5% 0 1%;
+}
+
+.box2 {
+	margin: 1% 0.5% 0 0.5%;
+}
+
+.box3 {
+	margin: 1% 1% 0 0.5%;
+}
+
+footer {
+	background-color: #ECC;
+}
+
+header, main, .box1, .box2, .box3, .nav1, .nav2, .nav3, .nav4, footer {
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+header, footer {
+	margin: 1%;
+}
+
+header, nav {
+	height: 100px;
+}
+
+.nav1, .nav2, .nav3, .nav4 {
+	height: 50px;
+	width: 24%;
+	background-color: #EDB795;
+	position: relative;
+	bottom: -25%;
+}
+
+.nav1, .nav2, .nav3 {
+	margin: 0 1.3% 0 0;
+	float: left;
+}
+
+.nav4 {
+	float: right;
+}
+
+.box1, .box2, .box3 {
+	height: 100px;
+	float: left;
+	width: 32%;
+	background-color: #CCD3DA;
+}

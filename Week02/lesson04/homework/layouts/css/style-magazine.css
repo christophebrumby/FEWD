@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after{
+	clear: both;
+}
+
+body {
+	width: 100%;
+	margin: auto;
+}
+
+header {
+	background-color: #FCE;
+	float: left;
+	width: 23%;
+}
+
+nav {
+	float: right;
+	width: 66%;
+	margin: 1% 1% 1% 0;
+}
+
+.column {
+	height: 828px;
+	width: 20%;
+	float: left;
+	background-color: #FDFABE;
+	margin: 0 1%;
+}
+
+main {
+	background-color: #CFE;
+	margin: 0 1% 0 0;
+	float: right;
+	width: 77%;
+}
+
+article {
+	background-color: #BEFDFA;
+	margin: 1% 1% 0 0;
+	float: left;
+	width: 57.5%;
+}
+
+aside {
+	background-color: #DBBEFD;
+	margin: 1% 1% 0 0;
+	float: right;
+	width: 18.5%;
+}
+
+footer {
+	background-color: #ECC;
+}
+
+header, .column, main, article, aside, .box1, .box2, .box3, .box4, .nav1, .nav2, .nav3, .nav4, .nav5, footer {
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+header, footer {
+	margin: 1%;
+}
+
+header, nav {
+	height: 100px;
+}
+
+article, aside {
+	height: 400px;
+}
+
+main, .box1, .box2, .box3, .box4, footer {
+	height: 200px;
+}
+
+.nav1, .nav2, .nav3, .nav4, .nav5 {
+	height: 50px;
+	width: 18%;
+	background-color: #EDB795;
+	position: relative;
+	bottom: -25%;
+}
+
+.nav1, .nav2, .nav3, .nav4 {
+	margin: 0 2.5% 0 0;
+	float: left;
+}
+
+.nav5 {
+	float: right;
+}
+
+.box1, .box2, .box3, .box4 {
+	float: left;
+	width: 18.5%;
+	background-color: #CCD3DA;
+}
+
+.box1, .box2, .box3 {
+	margin: 1% 1% 0 0;
+}
+
+.box4 {
+	margin: 1% 0 0 0;
+}

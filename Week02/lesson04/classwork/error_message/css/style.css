@@ -1,0 +1,38 @@
+body{
+  font-family: sans-serif;
+  line-height:1.5;
+  margin: 30px;
+}
+
+/*#notification{
+  background-color: #EEE;
+  padding: 10px;
+  border: 1px solid #CCC;
+}*/
+
+.message{
+  /*#FFE is the same as #FFEEEE*/
+  background-color: #FFE;
+  padding: 10px;
+  border: 2px solid #CCB;
+  margin: 10px 0;
+}
+
+.notification{
+  background-color: #EEE;
+  border-color: #CCC;
+}
+
+.error{
+  background-color: #FEE;
+  border-color: #C66;
+}
+
+.success{
+  background-color: #EFE;
+  border-color: #6C6;
+}
+
+code{
+  border: 1px solid black;
+}

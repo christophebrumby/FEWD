@@ -83,6 +83,7 @@ h1 {
   color: #FFF;
   margin-left: 50px;
   float: left;
+  padding: 20px 0;
 }
 
 h2 {
@@ -94,9 +95,6 @@ h2 {
 
 nav {
   float: right;
-}
-
-h1, nav {
   padding: 20px 0;
 }
 

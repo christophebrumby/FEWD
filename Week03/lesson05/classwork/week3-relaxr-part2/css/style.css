@@ -61,19 +61,20 @@ body {
 
 /* Center the container */
 #container {
-  width: 960px;
+  width: 1100px;
   margin: auto;
   background-color: #f0efef;
 }
 
 header {
   background-color: #033048;
-  padding: 20px 0;
+  padding: 20px 70px;
 }
 
 main {
   width: 700px;
-  padding: 50px 20px 0 50px;
+  padding-top: 50px;
+  margin: 0 20px 0 70px;
   float: left;
 }
 
@@ -85,6 +86,7 @@ article {
 aside {
   width: 240px;
   padding-top: 40px;
+  margin-right: 70px;
   float: right;
 }
 
@@ -99,7 +101,6 @@ footer {
 
 h1 {
   color: #FFF;
-  margin-left: 50px;
   float: left;
 }
 
@@ -126,7 +127,6 @@ h1, h3, h4 {
 
 nav {
   float: right;
-  margin-right: 50px;
   font-weight: 600;
   color: #f9e42e;
 }
@@ -236,6 +236,6 @@ a:hover {
   color: #3F7FBF;
 }
 
-a.topnav.active:hover {
+a.topnav.active:hover, a.logo.active:hover {
   color: inherit;
 }

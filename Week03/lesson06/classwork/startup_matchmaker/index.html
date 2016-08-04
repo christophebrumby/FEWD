@@ -9,23 +9,26 @@
 	<!-- external CSS links -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:700,700i,900" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:700,700i,900,900i" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-	<div id="container">
 		<header>
-			<h1>Startup Matchmaker</h1>
-			<nav>
-				<a href=".developers.html">Find Developers</a>
-				<a href=".designers.html">Find Designers</a>
-				<a href="/">How It Works</a>
-				<a href="/">Our Team</a>
-				<a href="/">Blog</a>
-			</nav>
+			<div class="container">
+				<div class="clearfix">
+					<h1>Startup Matchmaker</h1>
+					<nav>
+						<a href=".developers.html" class="navbig">Developers</a>
+						<a href=".designers.html" class="navbig">Designers</a>
+						<a href="/" class="navsmall">How It Works</a>
+						<a href="/" class="navsmall">Our Team</a>
+						<a href="/" class="navsmall">Blog</a>
+					</nav>
+				</div>
+			</div>
 		</header>
 		<h2>Because two brains <div id="strike">taste</div> <div id="underline">are</div> better than one.</h2>
 		<main>
@@ -53,7 +56,6 @@
 			</section>
 		</menu>
 		<footer>&copy; 2013 Startup Matchmaker. Made in NY.</footer>
-	</div>
-	
+
 </body>
 </html>

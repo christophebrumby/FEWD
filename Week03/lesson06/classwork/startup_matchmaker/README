@@ -5,3 +5,8 @@ Use either `reset.css` or `normalize.css` (copy over from another project into y
 
 Placeholder: http://placehold.it/280 (6KB)
 
+Nav when covered: font in yellow
+
+Active nav: grey background
+
+Drop shadow under the yellow button

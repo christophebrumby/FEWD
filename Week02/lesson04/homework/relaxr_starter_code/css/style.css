@@ -146,7 +146,8 @@ ul {
 #testimonial {
   color: #FFF;
   text-align: center;
-  background: url(../images/testimonial_bg.jpg) repeat center top rgb(134,141,157);
+  background: url(../images/testimonial_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: cover;
   position: relative;
   padding: 8% 0;
 }

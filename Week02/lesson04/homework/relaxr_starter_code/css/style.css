@@ -85,7 +85,8 @@ h1 {
   font-weight: 800;
   font-size: 24px;
   color: #FFF;
-  margin: 1% 0 8% 6%;
+  padding: 1% 0 0 6%;
+  margin-bottom: 8%;
 }
 
 h2 {

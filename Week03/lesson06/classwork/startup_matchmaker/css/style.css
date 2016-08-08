@@ -15,18 +15,14 @@ Developer @GA in London
  box-sizing: border-box; /* IE */
 }
 
-/* Clear fix hack */
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
+/* Clearfix hack */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
 }
 
-.clear {
- clear: both;
+.clearfix:after{
+  clear: both;
 }
 
 .alignright {

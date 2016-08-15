@@ -1,10 +1,11 @@
 body, input, button {
   font-family: sans-serif;
   font-size: 20px;
+  color: black;
 }
 
 input {
-  width: 100px;
+  width: 200px;
   padding: 10px;
   margin-right: 5px;
 }

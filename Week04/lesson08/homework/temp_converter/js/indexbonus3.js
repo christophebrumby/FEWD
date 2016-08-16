@@ -20,7 +20,7 @@ function conversion() {
   }
 
   else {
-    document.querySelector("#alert").innerHTML = "Please only fill one of the fields above.";
+    document.querySelector("#alert").innerHTML = "Please only fill one of the fields above. Click 'Reset' to clear both fields.";
   }
 
 }
@@ -29,12 +29,15 @@ document.querySelector("#convert").onclick = conversion;
 
 
 
+
 function clear() {
   document.querySelector("#c").value = "";
   document.querySelector("#f").value = "";
+  document.querySelector("#alert").innerHTML = "";
 }
 
 document.querySelector("#reset").onclick = clear;
+
 
 
 
@@ -43,6 +46,8 @@ function clearAlert() {
 }
 
 document.querySelector("#c").onfocus = clearAlert;
+
+
 
 
 function clearAlert() {

@@ -5,6 +5,9 @@ function conversion() {
 
   if ((f === null || f === "") && (c === null || c === "")) {
       document.querySelector("#alert").innerHTML = "Please fill one of the fields above.";
+      document.querySelector("#alert").style.border = "solid 1px red";
+      document.querySelector("#alert").style.backgroundColor = "white";
+      document.querySelector("#alert").style.padding = "5px";
       document.querySelector("#c").style.borderColor = "red";
       document.querySelector("#f").style.borderColor = "red";
   }
@@ -91,6 +94,10 @@ function conversion() {
 
   else {
     document.querySelector("#alert").innerHTML = "Please only fill <span id='emphasize'>one</span> of the fields above. Click 'Reset' to clear both fields.";
+    document.querySelector("#alert").style.borderTop = "solid 1px red";
+    document.querySelector("#alert").style.borderBottom = "solid 1px red";
+    document.querySelector("#alert").style.backgroundColor = "white";
+    document.querySelector("#alert").style.padding = "5px";
     document.querySelector("#c").style.borderColor = "red";
     document.querySelector("#f").style.borderColor = "red";
   }
@@ -106,10 +113,13 @@ function clear() {
   document.querySelector("#c").value = "";
   document.querySelector("#f").value = "";
   document.querySelector("#alert").innerHTML = "";
+  document.querySelector("#alert").style.border = "";
+  document.querySelector("#alert").style.backgroundColor = "";
+  document.querySelector("#alert").style.padding = "";
   document.querySelector("#c").style.borderColor = "grey";
   document.querySelector("#f").style.borderColor = "grey";
   document.querySelector("#thermo").style.paddingTop = "200px";
-      document.querySelector(".wrapper").style.backgroundImage = "";
+  document.querySelector(".wrapper").style.backgroundImage = "";
 }
 
 document.querySelector("#reset").onclick = clear;
@@ -119,6 +129,9 @@ document.querySelector("#reset").onclick = clear;
 
 function clearAlert() {
       document.querySelector("#alert").innerHTML = "";
+      document.querySelector("#alert").style.border = "";
+      document.querySelector("#alert").style.backgroundColor = "";
+      document.querySelector("#alert").style.padding = "";
       document.querySelector("#c").style.borderColor = "grey";
       document.querySelector("#f").style.borderColor = "grey";
 }
@@ -130,6 +143,9 @@ document.querySelector("#c").onfocus = clearAlert;
 
 function clearAlert() {
       document.querySelector("#alert").innerHTML = "";
+      document.querySelector("#alert").style.border = "";
+      document.querySelector("#alert").style.backgroundColor = "";
+      document.querySelector("#alert").style.padding = "";
       document.querySelector("#c").style.borderColor = "grey";
       document.querySelector("#f").style.borderColor = "grey";
 }

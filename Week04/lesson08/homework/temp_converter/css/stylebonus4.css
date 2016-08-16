@@ -58,7 +58,7 @@ section {
   border: solid 1px black;
   background: linear-gradient(to top, blue, cyan, yellow, orange, red);
   background-clip: content-box;
-  padding-top: 200px;
+  box-shadow: 0 0 20px rgba(255,255,255,.75);
 }
 
 #thermo {

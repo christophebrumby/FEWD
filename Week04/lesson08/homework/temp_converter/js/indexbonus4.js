@@ -45,7 +45,7 @@ function conversion() {
     f = c * 9 / 5 + 32;
     document.querySelector("#f").value = Math.round(f*10)/10+"°F";
     document.querySelector("#thermo").style.paddingTop = "0px";
-    document.querySelector(".wrapper").style.backgroundImage = "url('http://www.samaa.tv/wp-content/uploads/digital_news/2015-08-06/hot-humid-weather-forecast-for-upcoming-days-1438849216-9625.jpg')";
+    document.querySelector(".wrapper").style.backgroundImage = "url('http://img.fotocommunity.com/eruption-0076bbc1-8b12-41ef-99ce-f4ea39b80229.jpg?height=400')";
     document.querySelector(".wrapper").style.backgroundSize = "cover";
   }
 
@@ -85,7 +85,7 @@ function conversion() {
     c = (f - 32) * 5 / 9;
     document.querySelector("#c").value = Math.round(c*10)/10+"°C";
     document.querySelector("#thermo").style.paddingTop = "0px";
-    document.querySelector(".wrapper").style.backgroundImage = "url('http://www.samaa.tv/wp-content/uploads/digital_news/2015-08-06/hot-humid-weather-forecast-for-upcoming-days-1438849216-9625.jpg')";
+    document.querySelector(".wrapper").style.backgroundImage = "url('http://img.fotocommunity.com/eruption-0076bbc1-8b12-41ef-99ce-f4ea39b80229.jpg?height=400')";
     document.querySelector(".wrapper").style.backgroundSize = "cover";
   }
 

@@ -56,15 +56,11 @@ section {
   border: solid 1px black;
   background: linear-gradient(to top, blue, cyan, yellow, orange, red);
   background-clip: content-box;
+  padding-top: 200px;
 }
 
-#thermoc {
-  margin-right: 10px;
-  margin-left: 75px;
-}
-
-#thermof {
-  margin-left: 10px;
+#thermo {
+  margin: 0 20px;
 }
 
 input {
@@ -75,7 +71,7 @@ input {
 }
 
 #c {
-  margin: 0 10px 0 0;
+  margin-left: 80px;
 }
 
 main {

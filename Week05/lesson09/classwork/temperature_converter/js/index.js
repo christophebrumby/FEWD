@@ -12,19 +12,23 @@ function convert() {
     scale = "C";
   }
 
+  function switchBackground(thing) {
+    document.querySelector("body").style.backgroundColor = thing;
+  }
+
 // change the background color based on value of c
 if (c <= 0) {
   // change background to blue
-  document.querySelector("body").style.backgroundColor = "blue";
+  switchBackground("blue");
 } else if (c > 0 && c <= 18 ) {
   // change background to gray
-  document.querySelector("body").style.backgroundColor = "gray";
+  switchBackground("gray");
 } else if (c > 18 && c <= 30 ) {
   // change background to orange
-  document.querySelector("body").style.backgroundColor = "orange";
+  switchBackground("orange");
 } else {
   // change background to red
-  document.querySelector("body").style.backgroundColor = "red";
+  switchBackground("red");
 }
 
   document.querySelector("h3").innerHTML = "Result: " + conversion + "°" + scale;

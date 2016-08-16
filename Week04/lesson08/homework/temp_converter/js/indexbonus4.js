@@ -37,7 +37,7 @@ function conversion() {
     f = c * 9 / 5 + 32;
     document.querySelector("#f").value = Math.round(f*10)/10+"°F";
     document.querySelector("#thermo").style.paddingTop = "40px";
-    document.querySelector(".wrapper").style.backgroundImage = "url('http://www.samaa.tv/wp-content/uploads/digital_news/2015-08-06/hot-humid-weather-forecast-for-upcoming-days-1438849216-9625.jpg')";
+    document.querySelector(".wrapper").style.backgroundImage = "url('http://www.vietnam-tour.biz/wp-content/uploads/2016/05/Dalat-and-Central-Highlands-seem-to-return-to-nice-weather-in-October.jpg')";
     document.querySelector(".wrapper").style.backgroundSize = "cover";
   }
 
@@ -77,7 +77,7 @@ function conversion() {
     c = (f - 32) * 5 / 9;
     document.querySelector("#c").value = Math.round(c*10)/10+"°C";
     document.querySelector("#thermo").style.paddingTop = "40px";
-    document.querySelector(".wrapper").style.backgroundImage = "url('http://www.samaa.tv/wp-content/uploads/digital_news/2015-08-06/hot-humid-weather-forecast-for-upcoming-days-1438849216-9625.jpg')";
+    document.querySelector(".wrapper").style.backgroundImage = "url('http://www.vietnam-tour.biz/wp-content/uploads/2016/05/Dalat-and-Central-Highlands-seem-to-return-to-nice-weather-in-October.jpg')";
     document.querySelector(".wrapper").style.backgroundSize = "cover";
   }
 

@@ -59,6 +59,7 @@ section {
   background: linear-gradient(to top, blue, cyan, yellow, orange, red);
   background-clip: content-box;
   box-shadow: 0 0 20px rgba(255,255,255,.75);
+  padding-top: 200px;
 }
 
 #thermo {
@@ -107,4 +108,10 @@ button:active {
   font-size: 10px;
   color: red;
   text-align: center;
+}
+
+#emphasize {
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: underline;
 }

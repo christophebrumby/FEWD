@@ -90,7 +90,7 @@ function conversion() {
   }
 
   else {
-    document.querySelector("#alert").innerHTML = "Please only fill ONE of the fields above. Click 'Reset' to clear both fields.";
+    document.querySelector("#alert").innerHTML = "Please only fill <span id='emphasize'>one</span> of the fields above. Click 'Reset' to clear both fields.";
     document.querySelector("#c").style.borderColor = "red";
     document.querySelector("#f").style.borderColor = "red";
   }

@@ -13,8 +13,8 @@ function convert() {
     c =  conversion;
   }
 
-  function switchBackground(thing) {
-    document.querySelector("body").style.backgroundColor = thing;
+  function switchBackground(color) {
+    document.querySelector("body").style.backgroundColor = color;
   }
 
 if (c <= 0) {

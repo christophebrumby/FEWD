@@ -1,0 +1,27 @@
+body {
+  background-color: white;
+  transition: background-color 2s linear, color 5s ease-in-out;
+  /*transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]*/
+  /*See https://css-tricks.com/almanac/properties/t/transition/ and "Related Properties" at the bottom of that page*/
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+.blue h1 {
+  border-bottom: 5px solid yellow;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.red {
+  background-color: red;
+}

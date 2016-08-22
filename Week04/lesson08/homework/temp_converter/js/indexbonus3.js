@@ -10,13 +10,13 @@ function conversion() {
   else if (f === null || f === "") {
     f = c * 9 / 5 + 32;
     document.querySelector("#f").value = Math.round(f*10)/10+"°F";
-    c = c+"°C";
+    document.querySelector("#c").value = c + "°C";
   }
 
   else if (c === null || c === "") {
     c = (f - 32) * 5 / 9;
     document.querySelector("#c").value = Math.round(c*10)/10+"°C";
-    f = f+"°F";
+    document.querySelector("#f").value = f + "°F";
   }
 
   else {
@@ -46,12 +46,5 @@ function clearAlert() {
 }
 
 document.querySelector("#c").onfocus = clearAlert;
-
-
-
-
-function clearAlert() {
-      document.querySelector("#alert").innerHTML = "";
-}
 
 document.querySelector("#f").onfocus = clearAlert;

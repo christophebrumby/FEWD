@@ -16,31 +16,31 @@ function switchCity(event) {
 
   event.preventDefault();
 
-  var city = document.querySelector("#city-type").value;
-  var citylow = city.toLowerCase();
-  var citylowtrim = $.trim(citylow);
+  var city = $("#city-type").val();
+  $("#city-type").val("");
+  city = city.toLowerCase().trim();
 
-  if (citylowtrim === "austin") {
+  if (city === "austin") {
     $("body").css("background-image", "url(./images/austin.jpg)");
   }
 
-  else if (citylowtrim === "la" || citylowtrim === "los angeles" || citylowtrim === "lax") {
+  else if (city === "la" || city === "los angeles" || city === "lax") {
     $("body").css("background-image", "url(./images/la.jpg)");
   }
 
-  else if (citylowtrim === "london" || citylowtrim === "ldn") {
+  else if (city === "london" || city === "ldn") {
     $("body").css("background-image", "url(./images/london.jpg)");
   }
 
-  else if (citylowtrim === "nyc" || citylowtrim === "new york" || citylowtrim === "new york city" || citylowtrim === "newyork" || citylowtrim === "newyorkcity") {
+  else if (city === "nyc" || city === "new york" || city === "new york city" || city === "newyork" || city === "newyorkcity") {
     $("body").css("background-image", "url(./images/nyc.jpg)");
   }
 
-  else if (citylowtrim === "sf" || citylowtrim === "san fran" || citylowtrim === "san franscisco") {
+  else if (city === "sf" || city === "san fran" || city === "san franscisco") {
     $("body").css("background-image", "url(./images/sf.jpg)");
   }
 
-  else if (citylowtrim === "sydney") {
+  else if (city === "sydney") {
     $("body").css("background-image", "url(./images/sydney.jpg)");
   }
 

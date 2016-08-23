@@ -118,6 +118,9 @@ header {
   background: #fff600;
 }
 
+.london {
+  background-image: url(../images/london.jpg)
+}
 .nyc {
   background-image: url(../images/nyc.jpg)
 }

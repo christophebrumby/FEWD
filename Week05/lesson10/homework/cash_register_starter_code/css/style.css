@@ -73,3 +73,12 @@ body {
   outline: none;
   border-color: rgba(255,255,255,.75);
 }
+
+#alert {
+  color: red;
+  font-style: italic;
+  font-size: 10px;
+  margin: 0 2em;
+  padding-top: 1em;
+  text-align: right;
+}

@@ -14,18 +14,35 @@ function sumItAll (event) {
 
   amount = parseFloat(amount);
 
-  $("#entries").append("<tr><td></td><td>" + currencyFormat(amount) + "</td></tr>");
+  if ($.isNumeric(amount)) {
 
-  total = total + amount;
+      $("#entries").append("<tr><td></td><td>" + currencyFormat(amount) + "</td></tr>");
 
-  $("#total").html(currencyFormat(total));
+      total = total + amount;
+
+      $("#total").html(currencyFormat(total));
+
+  }
+
+  else {
+
+      $("#alert").html("* Please enter a number.");
+
+  }
 
   $("#newEntry").val("");
+
+  $("#newEntry").keypress(clearAlert);
 
 }
 
 function currencyFormat(number) {
   return "$" + number.toFixed(2);
 }
+
+function clearAlert() {
+  $("#alert").html("");
+}
+
 
 $("#entry").submit(sumItAll)

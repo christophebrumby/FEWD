@@ -14,14 +14,18 @@ function sumItAll (event) {
 
   amount = parseFloat(amount);
 
-  $("#entries").append("<tr><td></td><td>" + '$' + amount.toFixed(2) + "</td></tr>");
+  $("#entries").append("<tr><td></td><td>" + currencyFormat(amount) + "</td></tr>");
 
   total = total + amount;
 
-  $("#total").html("$" + total.toFixed(2));
+  $("#total").html(currencyFormat(total));
 
   $("#newEntry").val("");
 
+}
+
+function currencyFormat(number) {
+  return "$" + number.toFixed(2);
 }
 
 $("#entry").submit(sumItAll)

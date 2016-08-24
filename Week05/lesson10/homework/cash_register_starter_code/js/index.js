@@ -18,15 +18,19 @@ function sumItAll (event) {
 
       $("#entries").append("<tr><td></td><td>" + currencyFormat(amount) + "</td></tr>");
 
+      transition("tbody tr:last-child");
+
       total = total + amount;
 
       $("#total").html(currencyFormat(total));
+
+      transition("tfoot th:last-child");
 
   }
 
   else {
 
-      $("#alert").html("* Please enter a number.");
+    $("#alert").html("* Please enter a number.");
 
   }
 
@@ -44,5 +48,8 @@ function clearAlert() {
   $("#alert").html("");
 }
 
+function transition(newlyAdded) {
+  return $(newlyAdded).slideUp( 1000 ).fadeIn( 2000 );
+}
 
-$("#entry").submit(sumItAll)
+$("#entry").submit(sumItAll);

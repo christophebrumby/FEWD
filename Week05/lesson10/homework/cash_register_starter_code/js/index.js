@@ -16,15 +16,29 @@ function sumItAll (event) {
 
   if ($.isNumeric(amount)) {
 
-      $("#entries").append("<tr><td></td><td>" + currencyFormat(amount) + "</td></tr>");
+      window.setTimeout(function() {showRow();}, 1000);
 
-      transition("tbody tr:last-child");
+      var rowCount = $("table tbody tr").length;
+
+      console.log(rowCount);
+
+      if (rowCount === 0) {
+
+        transition("tbody");
+
+      }
+
+      else {
+
+        transition("table tbody tr:eq(-1)");
+
+      }
 
       total = total + amount;
 
-      $("#total").html(currencyFormat(total));
+      window.setTimeout(function() {showTotal();}, 1000);
 
-      transition("tfoot th:last-child");
+      transition("#total");
 
   }
 
@@ -48,8 +62,16 @@ function clearAlert() {
   $("#alert").html("");
 }
 
+function showTotal () {
+  $("#total").html(currencyFormat(total));
+}
+
+function showRow () {
+  $("#entries").append("<tr><td></td><td>" + currencyFormat(amount) + "</td></tr>");
+}
+
 function transition(newlyAdded) {
-  return $(newlyAdded).slideUp( 1000 ).fadeIn( 2000 );
+  return $(newlyAdded).slideUp(1000).fadeIn(3000);
 }
 
 $("#entry").submit(sumItAll);

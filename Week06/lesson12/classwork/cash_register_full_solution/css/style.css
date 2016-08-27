@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #EEE;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 3em;
+  padding: 0;
+}
+
+#register {
+  width: 20em;
+  margin: auto;
+}
+
+#ticket {
+  background: white;
+  margin: 0 1em;
+  padding: 1em;
+  box-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+
+#ticket h1 {
+  text-align: center;
+}
+
+#ticket table {
+  font-family: monospace;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#ticket td, #ticket th {
+  padding: 5px;
+}
+
+.total-word {
+  text-align: left;
+}
+
+#entries td, .total {
+  text-align: right;
+}
+
+#ticket tfoot th {
+  border-top: 1px solid black;
+}
+
+#entry {
+  background: #333;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+
+#entry input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 20px;
+  box-shadow: inset 0 0 3px rgba(0,0,0,.5);
+}
+
+#entry input:focus {
+  outline: none;
+  border-color: rgba(255,255,255,.75);
+}
+
+.error {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid red;
+  color: red;
+}
+
+.total, .line-item {
+  transition: opacity 0.5s linear;
+}
+
+/* The way CSS transitions works is that you have to explicity define the default,
+and because you don't want to get into issues with CSS specificity, it's best to define
+these on their own before the modifiers (.hidden and .visible) */
+
+.total {
+  opacity: 1;
+}
+
+.line-item {
+  opacity: 0;
+}
+
+/* .hidden and .visible are the modifiers, so they should go as far down the file as possible
+Also, again because of specificity (and the fact that IDs are "stronger"), I've changed
+the two parts of the site that are going to get animated to work exclusively with classes,
+no longer with IDs */
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}

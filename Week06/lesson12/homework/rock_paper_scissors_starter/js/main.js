@@ -1,4 +1,4 @@
-var botChoice = "scissors";
+var botOptions = ["rock", "paper", "scissors"];
 
 var humanScore = 0;
 
@@ -7,18 +7,24 @@ var computerScore = 0;
 function humanRock (e) {
   e.preventDefault();
   var humanChoice = $("#rock").attr("id");
+  var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
+  console.log(botChoice);
   compare(humanChoice, botChoice);
 }
 
 function humanPaper (e) {
   e.preventDefault();
   var humanChoice = $("#paper").attr("id");
+  var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
+  console.log(botChoice);
   compare(humanChoice, botChoice);
 }
 
 function humanScissors (e) {
   e.preventDefault();
   var humanChoice = $("#scissors").attr("id");
+  var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
+  console.log(botChoice);
   compare(humanChoice, botChoice);
 }
 

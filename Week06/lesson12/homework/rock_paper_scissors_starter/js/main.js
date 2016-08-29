@@ -5,24 +5,24 @@ var humanScore = 0;
 var computerScore = 0;
 
 function humanRock (e) {
-  var humanChoice = $("#rock").attr("id");
+  // var humanChoice = "rock";
   var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
-  console.log(botChoice);
-  compare(humanChoice, botChoice);
+  // console.log(botChoice);
+  compare("rock", botChoice);
 }
 
 function humanPaper (e) {
-  var humanChoice = $("#paper").attr("id");
+  // var humanChoice = "paper";
   var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
-  console.log(botChoice);
-  compare(humanChoice, botChoice);
+  // console.log(botChoice);
+  compare("paper", botChoice);
 }
 
 function humanScissors (e) {
-  var humanChoice = $("#scissors").attr("id");
+  // var humanChoice = "scissors";
   var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
-  console.log(botChoice);
-  compare(humanChoice, botChoice);
+  // console.log(botChoice);
+  compare("scissors", botChoice);
 }
 
 function compare (humanChoice, botChoice) {

@@ -6,21 +6,38 @@ function imageSource(slideNumber) {
   $("img").attr("src","./images/animals/" + images[slideNumber] + ".jpg");
 }
 
-
 function showPrevious () {
 
-  if (position > 0) {
+  if (position > 1) {
     position--;
     imageSource(position);
+    $("#forward").show();
   }
+
+  else if (position === 1) {
+    position--;
+    imageSource(position);
+    $("#back").hide();
+  }
+
 }
 
 function showNext () {
 
-  if (position < 5)  {
-      position++;
-      imageSource(position);
+  if (position < images.length - 1)  {
+    position++;
+    imageSource(position);
+    $("#forward").show();
+    $("#back").show();
   }
+
+  if (position === images.length - 1) {
+    position;
+    imageSource(position);
+    $("#forward").hide();
+    $("#back").show();
+  }
+
 }
 
 $("#back").click(showPrevious);

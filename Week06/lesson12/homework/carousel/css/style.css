@@ -95,6 +95,10 @@ nav ul li a:hover {
   border-radius: 4px;
 }
 
+#back {
+  display: none;
+}
+
 img, #buttons-wrapper {
   margin: 0 auto;
   width: 500px;

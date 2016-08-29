@@ -4,25 +4,24 @@ var humanScore = 0;
 
 var computerScore = 0;
 
-function humanRock (e) {
-  // var humanChoice = "rock";
-  var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
-  // console.log(botChoice);
-  compare("rock", botChoice);
+function botChoice() {
+  var botOptions = ["rock", "paper", "scissors"];
+  return botOptions[Math.floor(Math.random() * botOptions.length)];
 }
 
-function humanPaper (e) {
-  // var humanChoice = "paper";
-  var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
-  // console.log(botChoice);
-  compare("paper", botChoice);
+function humanRock () {
+  // var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
+  compare("rock", botChoice());
 }
 
-function humanScissors (e) {
-  // var humanChoice = "scissors";
-  var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
-  // console.log(botChoice);
-  compare("scissors", botChoice);
+function humanPaper () {
+  // var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
+  compare("paper", botChoice());
+}
+
+function humanScissors () {
+  // var botChoice = botOptions[Math.floor(Math.random() * botOptions.length)];
+  compare("scissors", botChoice());
 }
 
 function compare (humanChoice, botChoice) {

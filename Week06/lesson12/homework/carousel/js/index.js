@@ -10,7 +10,7 @@ function imageSource(slideNumber) {
 function showPrevious () {
 
   if (position > 0) {
-    position = position - 1;
+    position--;
     imageSource(position);
   }
 }
@@ -18,7 +18,7 @@ function showPrevious () {
 function showNext () {
 
   if (position < 5)  {
-      position = position + 1;
+      position++;
       imageSource(position);
   }
 }

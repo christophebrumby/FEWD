@@ -34,25 +34,23 @@ function compare (humanChoice, botChoice) {
 
   else if ((humanChoice === "rock" && botChoice === "scissors") || (humanChoice === "paper" && botChoice === "rock") || (humanChoice === "scissors" && botChoice === "paper")) {
 
-  $("#status").html("You have chosen <strong>" + humanChoice + "</strong> and.................. the Bot has chosen <strong>" + botChoice + "</strong>:<p>You win!</p>");
+    $("#status").html("You have chosen <strong>" + humanChoice + "</strong> and.................. the Bot has chosen <strong>" + botChoice + "</strong>:<p>You win!</p>");
 
-  humanScore = parseInt(humanScore, 10);
+    humanScore++;
 
-  humanScore = humanScore + 1;
+    // humanScore++ is equivalent to humanScore = humanScore + 1;
 
-  $("#humanScore").html(humanScore);
+    $("#humanScore").html(humanScore);
 
   }
 
   else if ((humanChoice === "rock" && botChoice === "paper") || (humanChoice === "paper" && botChoice === "scissors") || (humanChoice === "scissors" && botChoice === "rock")){
 
-  $("#status").html("You have chosen <strong>" + humanChoice + "</strong> and.................. the Bot has chosen <strong>" + botChoice + "</strong>:<p>The Bot wins!</p>");
+    $("#status").html("You have chosen <strong>" + humanChoice + "</strong> and.................. the Bot has chosen <strong>" + botChoice + "</strong>:<p>The Bot wins!</p>");
 
-  computerScore = parseInt(computerScore, 10);
+    computerScore++;
 
-  computerScore = computerScore + 1;
-
-  $("#computerScore").html(computerScore);
+    $("#computerScore").html(computerScore);
 
   }
 

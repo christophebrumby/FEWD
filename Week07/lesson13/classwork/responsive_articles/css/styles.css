@@ -1,0 +1,130 @@
+/* Box Model Hack */
+* {
+ box-sizing: border-box;
+}
+
+/* Clearfix hack */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  background-color: #F6F0E4;
+}
+
+/* Basic/Mobile Article Styling: */
+
+main {
+  margin: 0 auto;
+}
+
+article {
+  padding: 20px;
+}
+
+h2 {
+  font-family: 'PT Serif', serif;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Responsive Article Styling: */
+
+@media (min-width: 480px) { /* mobile-landscape */
+  /* limit <main> to 440px and do necessary styling to match screenshot
+  Use classes and elements present in HTML as clues */
+  main {
+    width: 440px;
+    font-size: 0px;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-top: 0;
+  }
+
+  .right-aligned {
+    float: right;
+  }
+
+  .left-aligned {
+    margin-right: 6%;
+  }
+
+  .right-aligned, .left-aligned {
+    font-size: 13px;
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+  }
+
+}
+
+@media (min-width: 650px) { /* tablet-portrait */
+  /* limit <main> to 610px and do necessary styling to match screenshot
+  Re-stack image on top of text and use the font-size:0 "hack" to create a 2-column layout */
+  main {
+    width: 610px;
+  }
+
+  article {
+    width: 50%;
+    display: inline-block;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    margin: 20px 0;
+  }
+
+  .right-aligned {
+    float: none;
+  }
+
+  .right-aligned, .left-aligned {
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 940px) { /* tablet-landscape/smaller laptops */
+  /* limit <main> to 900px and create a 3-column layout. Very minimal styling needed here,
+  as the CSS in the previous media-query does the heavy-lifting around creating a mult-column layout */
+  main {
+    width: 900px;
+  }
+
+  article {
+    width: 33.3%;
+    display: inline-block;
+  }
+
+}
+
+@media (min-width: 1220px) { /* laptops/desktops */
+  /* limit <main> to 1180px to create a wider 3-column layout */
+
+  main {
+    width: 1180px;
+  }
+
+}

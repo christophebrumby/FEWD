@@ -23,23 +23,35 @@ body {
 
 nav {
   background-color: #7BAFA4;
-  padding-bottom: 15px;
 }
 
 nav article {
-  padding: 15px 20px 15px;
+  padding: 0 20px;
+}
+
+menu {
+  float: right;
 }
 
 .menubutton {
-	width: 30px;
-	height: 30px;
-	background: white;
-  float: right;
+  position: relative;
+  background: white;
+  height: 5px;
+  width: 30px;
+  border-radius: 9px;
+  margin-bottom: 2px;
 }
 
 ul {
   padding: 0;
   margin: 0 20px;
+  transition: max-height 0.5s;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.visible {
+  max-height: 606px;
 }
 
 li {
@@ -51,11 +63,15 @@ li:first-child {
   border-top: 1px solid #F6F0E4;
 }
 
-li:hover, .menubutton:hover {
+li:last-child {
+  margin-bottom: 20px;
+}
+
+li:hover, li:focus, menu:hover > div, menu:focus > div {
   background-color: #488A7C;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
   color: white;
 }
@@ -131,6 +147,8 @@ img {
   ul {
     padding: 0 20px 0 0;
     margin-left: 0;
+    max-height: none;
+    overflow: hidden;
   }
 
   li {
@@ -141,6 +159,10 @@ img {
 
   li:first-child {
     border-top: none;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
   }
 
   main {

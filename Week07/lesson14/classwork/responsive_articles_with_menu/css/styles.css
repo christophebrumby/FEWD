@@ -25,8 +25,8 @@ nav {
   background-color: #7BAFA4;
 }
 
-nav article {
-  padding: 0 20px;
+nav div {
+  margin-right: 10px;
 }
 
 menu {
@@ -67,7 +67,7 @@ li:last-child {
   margin-bottom: 20px;
 }
 
-li:hover, li:focus, menu:hover > div, menu:focus > div {
+li:hover, li:focus, menu:hover > div, menu:hover > div {
   background-color: #488A7C;
 }
 
@@ -104,9 +104,13 @@ img {
 @media (min-width: 480px) { /* mobile-landscape */
   /* limit <main> to 440px and do necessary styling to match screenshot
   Use classes and elements present in HTML as clues */
+
+  nav div {
+    margin-right: 10px;
+  }
+
   main {
     width: 440px;
-    font-size: 0px;
   }
 
   h2 {
@@ -119,13 +123,14 @@ img {
   }
 
   .left-aligned {
-    margin-right: 6%;
+    margin-right: 20px;
+    float: left;
   }
 
   .right-aligned, .left-aligned {
     font-size: 13px;
     display: inline-block;
-    width: 47%;
+    width: 190px;
     vertical-align: top;
   }
 
@@ -140,7 +145,7 @@ img {
     padding: 0;
   }
 
-  nav article {
+  nav div {
     display: none;
   }
 
@@ -148,7 +153,6 @@ img {
     padding: 0 20px 0 0;
     margin-left: 0;
     max-height: none;
-    overflow: hidden;
   }
 
   li {
@@ -167,6 +171,7 @@ img {
 
   main {
     width: 610px;
+    font-size: 0;
   }
 
   article {
@@ -182,12 +187,9 @@ img {
     margin: 20px 0;
   }
 
-  .right-aligned {
-    float: none;
-  }
-
   .right-aligned, .left-aligned {
     width: 100%;
+    float: none;
   }
 
 }

@@ -1,4 +1,3 @@
-
 function dropDown () {
   $("ul").toggleClass("visible");
 }

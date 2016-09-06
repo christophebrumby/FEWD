@@ -67,7 +67,7 @@ li:last-child {
   margin-bottom: 20px;
 }
 
-li:hover, li:focus, menu:hover > div, menu:hover > div {
+li:hover, li:focus, menu:hover .menubutton, menu:hover .menubutton {
   background-color: #488A7C;
 }
 

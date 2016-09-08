@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Shakespearean Insult Generator</title>
+</head>
+<body>
+  <form action="http://10.1.7.230:3000" method="post">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" />
+
+    <select name="insult1" id="insult1">
+      <option value="artless">artless</option>
+      <option value="bawdy">bawdy</option>
+      <option value="churlish">churlish</option>
+    </select>
+
+    <select name="insult2" id="insult2">
+      <option value="idle-headed">idle-headed</option>
+      <option value="plume-plucked">plume-plucked</option>
+      <option value="toad-spotted">toad-spotted</option>
+    </select>
+
+    <select name="insult3" id="insult3">
+      <option value="flap-dragon">flap-dragon</option>
+      <option value="harpy">harpy</option>
+      <option value="maggot-pie">maggot-pie</option>
+    </select>
+
+    <input type="submit" value="Submit" />
+  </form>
+
+  <main></main>
+
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -25,3 +25,13 @@ div {
   background-color: pink;
   transform: skewX(15deg);
 }
+
+#rotate {
+  margin-top: 100px;
+  font-family: Arial;
+  transform: rotate(45deg);
+  vertical-align: middle;
+  font-size: 160px;
+  padding: 0px;
+  font-weight: bolder;
+}

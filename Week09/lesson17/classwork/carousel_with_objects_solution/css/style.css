@@ -1,0 +1,77 @@
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+ box-sizing: border-box;
+}
+
+/* Clearfix hack */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the main container */
+main {
+	width: 80%;
+	margin: 20px auto;
+  text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.btn {
+  color: white;
+  border: none;
+  background-color: coral;
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.btn:hover, .btn:focus {
+  outline: 0;
+  background-color: cadetblue;
+}
+
+img, #description {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#buttons-wrapper {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
